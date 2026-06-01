@@ -5,6 +5,7 @@ function ProductList({
   deleteProduct,
   setEditingProduct,
 }) {
+  //console.log(products);
   return (
     <div style={{ marginTop: "20px" }}>
       {products.map((product) => (

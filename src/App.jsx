@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProductForm from "./components/ProductForm";
 import ProductList from "./components/ProductList";
 import Fruits from "./components/Fruits";
+import { Phonenum } from "./components/Phonenum"
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -35,8 +36,9 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
+      <Phonenum></Phonenum>
       <Fruits></Fruits>
-      <h1>Product CRUD App</h1>
+      <h1 className="bg-red-500 mt-10">Product CRUD App</h1>
 
       <ProductForm
         addProduct={addProduct}
